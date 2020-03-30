@@ -1,0 +1,47 @@
+<!-- <img src="{{ user.photoUrl }}">
+<div>
+    <h4>{{ user.name }}</h4>
+    <p>{{ user.email }}</p>
+</div> -->
+
+
+<!-- <div class="container mt-5" style="margin-left: 30%;">
+    <h1 style="text-align: left; margin-left: 10%;"> Login</h1>
+    <div class="col mt-5">
+        <div class="row-md-4 mt-2 m-auto ">
+            <img style="width: 30%;" src="./assets/loginGoogle.png" (click)="signInWithGoogle()">
+        </div>
+        &nbsp;
+        <div class="row-md-4 mt-2 m-auto ">
+            <img style="width: 30%;" src="./assets/fb.png" (click)="signInWithFB()">
+        </div>
+    </div>
+</div> -->
+
+
+
+<div class="container-fluid">
+    <div class="row" style="text-align: -webkid-center;">
+        <div class="container mt-5" style="margin-left: 30%;">
+            <h1 style="text-align: left; margin-left: 10%;"> Login</h1>
+            <div class="col mt-5">
+                <div class="row-md-4 mt-2 m-auto ">
+                    <img style="width: 30%;" src="./assets/loginGoogle.png" (click)="signInWithGoogle()">
+                </div>
+                &nbsp;
+                <div class="row-md-4 mt-2 m-auto ">
+                    <img style="width: 30%;" src="./assets/fb.png" (click)="signInWithFB()">
+                </div>
+            </div>
+        </div>
+        <div class="col-md-12 " style="text-align: -webkid-center; margin-left: 30%; margin-top: 4%;">
+            <div class="card " style="width: 20rem; margin: 20px 0 24 px 0; text-align: -webkit-center; " *ngIf=" user.photoUrl ">
+                <img src="{{ user.photoUrl }}" alt="image " style="width: 200px; border-radius: 50%; margin-top: 10px; ">
+                <div class="card-body ">
+                    <h4 class="card-title ">{{user.name}}</h4>
+                    <p class="card-text ">{{user.email}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
